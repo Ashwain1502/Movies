@@ -5,7 +5,7 @@ let title = document.getElementById('title');
 search.addEventListener('click', function() {
     let movieTitle = title.value.trim();
     if (movieTitle !== '') {
-        fetch(`http://www.omdbapi.com/?t=${movieTitle}&apikey=fbf67667`)
+        fetch(`https://www.omdbapi.com/?t=${movieTitle}&apikey=fbf67667`)
             .then(response => response.json())
             .then(data => {
                 if (data.Response === "True") {
