@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- More Info : https://vidsrc.to/#top and https://datasets.imdbws.com/ -->
+
+    <!-- Way to find any movie online first search it in imdb database then find it's imdb number
+    add tt in front of it and search for this : https://vidsrc.to/embed/movie/{id}
+
+    Valid parameters:
+    - {id} required - from imdb.com or themoviedb.com, imdb id must have tt prefix.
+
+    Examples
+    https://vidsrc.to/embed/movie/tt17048514
+    https://vidsrc.to/embed/movie/927085 -->
+
+
+    <!-- Endpoint : https://vidsrc.to/embed/tv/{id}
+    Valid parameters:
+        - {id} required - from imdb.com or themoviedb.com, imdb id must have tt prefix.
+
+    Examples
+        https://vidsrc.to/embed/tv/tt18382028
+        https://vidsrc.to/embed/tv/158876 -->
+
+        <!-- api key for a imdbapi apikey=fbf67667 :: https://www.omdbapi.com/?i=tt3896198&apikey=fbf67667 -->
+
+        <!-- send requests to : http://www.omdbapi.com/?apikey=[yourkey]&
+        some poster api http://img.omdbapi.com/?apikey=[yourkey]& -->
+
+        <!-- api website : https://www.omdbapi.com/ -->
+
+
+    <div class="header">
+        Movies To Watch Online
+    </div>
+    <div class="searching">
+        <div class="label">
+            <label for="movie-name">Enter Movie Name:</label>
+        </div>
+        <div class="input">
+            <input type="text" id="title">
+        </div> 
+    </div>
+
+    <div class="button">
+        <button id="search">Search</button>
+    </div>  
+
+    <div id="movie"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

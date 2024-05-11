@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(18, 18, 18, 0.873);
+    color: rgb(27, 26, 26);
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.header{
+    height: 10vh;
+    font-size: 3rem;
+    font-family: "Abril Fatface", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searching{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 2rem;
+}
+
+.label{
+    margin-right: 1rem;
+}
+
+input{
+    font-size: 1.75rem;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    color: rgb(45, 45, 45);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    font-size: 2rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: wheat;
+}
+
+#movie{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+iframe{
+    width: 95%;
+    height: 100vh;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        font-size: 2rem;
+        overflow: hidden;
+    }
+
+    .searching{
+        font-size: 1.5rem;
+        flex-direction: column;
+        height: 100px;
+        overflow-y: hidden;
+    }
+    
+    input{
+        font-size: 1.5rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .button{
+        height: 50px;
+        overflow: hidden;
+    }
+
+    #movie{ 
+        height: 250px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    iframe{
+        height: auto;
+        width: 90%;
+        overflow: hidden;
+    }
+}
