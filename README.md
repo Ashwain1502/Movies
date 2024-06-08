@@ -1,6 +1,6 @@
 # Movies
 
-Personal Website to watch movies developed using Javascript, IMDB API, and Vidsrc backend server API.
+Website to watch movies developed using Javascript, IMDB API, and Vidsrc backend server API.
 
 ## Functions
 
