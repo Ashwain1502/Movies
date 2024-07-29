@@ -6,7 +6,7 @@
     <title>Movies</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-mode">
 
     <!-- More Info : https://vidsrc.to/#top and https://datasets.imdbws.com/ -->
 
@@ -20,7 +20,6 @@
     https://vidsrc.to/embed/movie/tt17048514
     https://vidsrc.to/embed/movie/927085 -->
 
-
     <!-- Endpoint : https://vidsrc.to/embed/tv/{id}
     Valid parameters:
         - {id} required - from imdb.com or themoviedb.com, imdb id must have tt prefix.
@@ -29,17 +28,25 @@
         https://vidsrc.to/embed/tv/tt18382028
         https://vidsrc.to/embed/tv/158876 -->
 
-        <!-- api key for a imdbapi apikey=fbf67667 :: https://www.omdbapi.com/?i=tt3896198&apikey=fbf67667 -->
+    <!-- api key for a imdbapi apikey=fbf67667 :: https://www.omdbapi.com/?i=tt3896198&apikey=fbf67667 -->
 
-        <!-- send requests to : http://www.omdbapi.com/?apikey=[yourkey]&
-        some poster api http://img.omdbapi.com/?apikey=[yourkey]& -->
+    <!-- send requests to : http://www.omdbapi.com/?apikey=fbf67667&
+    some poster api http://img.omdbapi.com/?apikey=[yourkey]& -->
 
-        <!-- api website : https://www.omdbapi.com/ -->
-
+    <!-- api website : https://www.omdbapi.com/ -->
 
     <div class="header">
         Movies To Watch Online
     </div>
+
+    <div class="dark-mode-toggle">
+        <label class="switch">
+            <input type="checkbox" id="toggle-dark-mode">
+            <span class="slider round"></span>
+        </label>
+        <span>Dark Mode</span>
+    </div>
+
     <div class="searching">
         <div class="label">
             <label for="movie-name">Enter Movie Name:</label>
